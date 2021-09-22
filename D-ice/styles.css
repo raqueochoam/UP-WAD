@@ -1,0 +1,37 @@
+body {
+  background-color: #fbf4e9;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+h1 {
+  margin: 30px;
+  font-size: 8rem;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 3px; 
+  color: #b1e693;
+  text-shadow: 5px 0 #6fcb64;
+
+}
+
+p {
+  margin: 5px;
+  font-size: 2rem;
+  letter-spacing: 3px; 
+  font-family: 'Lobster', normal;
+  color: #ec9cd3;
+}
+
+img {
+  width: 80%;
+}
