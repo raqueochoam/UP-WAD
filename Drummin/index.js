@@ -1,7 +1,7 @@
 function makeSound(key){
     var soundfile;
 
-    switch(soundfile){
+    switch(key){
         case 'w' :
             soundfile="tom-1";
             break;
@@ -31,7 +31,7 @@ function makeSound(key){
             break;
     }
 
-    var sound = new Audio("sounds/" + soundfile + ".mp3");
+    var sound = new Audio("sounds/"+soundfile+".mp3");
     sound.play();
 
 }
@@ -47,11 +47,12 @@ function animationBtn(currentKey){
 }
 
 var drums = document.querySelectorAll(".drum");
-var numberOfDrums = drums.length();
+var numberOfDrums = drums.length;
 
 for (var i=0; i<numberOfDrums; i++){
     drums[i].addEventListener("click", function(){
         var keyPressed = this.innerHTML;
+        console.log("hi");
         makeSound(keyPressed);
         animationBtn(keyPressed);
     });
